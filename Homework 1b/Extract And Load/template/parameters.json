@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscription": {
-            "value": "@subId"
+            "value": "db6c1187-e779-47a9-8a6d-e4ed0dfc5133"
         },
         "name": {
-            "value": "@dfName"
+            "value": "df-dx204-hw-dmd"
         },
         "version": {
             "value": "V2"
