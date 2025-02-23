@@ -1,0 +1,65 @@
+az deployment group create --resource-group Mod4_Homework --template-file template/template.json --parameters template/parameters.json
+
+SELECT * 
+FROM Complaints
+WHERE DATEA = (SELECT MAX(DATEA) FROM Complaints)
+
+SELECT * 
+FROM Complaints
+WHERE DATEA = CONVERT(Date, GETDATE()-1)
+
+
+
+
+
+CREATE TABLE complaints (
+ CMPLID int primary key,
+ ODINO nvarchar(max),
+ MFR_NAME nvarchar(max),
+ MAKETXT nvarchar(max),
+ MODELTXT nvarchar(max),
+ YEARTXT nvarchar(max),
+ CRASH nvarchar(max),
+ FAILDATE date,
+ FIRE nvarchar(max),
+ INJURED int,
+ DEATHS int,
+ COMPDESC nvarchar(max),
+ CITY nvarchar(max),
+ STATE nvarchar(max),
+ VIN nvarchar(max),
+ DATEA date,
+ LDATE date,
+ MILES int,
+ OCCURENCES int,
+ CDESCR nvarchar(max),
+ DEALER_TEL nvarchar(max),
+ DEALER_CITY nvarchar(max),
+ DEALER_STATE nvarchar(max),
+ DEALER_ZIP nvarchar(max),
+ PROD_TYPE nvarchar(max),
+ REPAIRED_YN nvarchar(max),
+ MEDICAL_ATTN nvarchar(max),
+ VEHICLES_TOWED_YN nvarchar(max)
+ )
+ CMPL_TYPE nvarchar(max),
+ POLICE_RPT_YN nvarchar(max),
+ PURCH_DT date,
+ ORIG_OWNER_YN nvarchar(max),
+ ANTI_BRAKES_YN nvarchar(max),
+ CRUISE_CONT_YN nvarchar(max),
+ NUM_CYLS int,
+ DRIVE_TRAIN nvarchar(max),
+ FUEL_SYS nvarchar(max),
+ FUEL_TYPE nvarchar(max),
+ TRANS_TYPE nvarchar(max),
+ VEH_SPEED int,
+ DOT nvarchar(max),
+ TIRE_SIZE nvarchar(max),
+ LOC_OF_TIRE nvarchar(max),
+ TIRE_FAIL_TYPE nvarchar(max),
+ ORIG_EQUIP_YN nvarchar(max),
+ MANUF_DT date,
+ SEAT_TYPE nvarchar(max),
+ RESTRAINT_TYPE nvarchar(max),
+ DEALER_NAME nvarchar(max)

@@ -6,7 +6,7 @@
             "value": "SQL_Latin1_General_CP1_CI_AS"
         },
         "databaseName": {
-            "value": "@dbName"
+            "value": "db52cc13-MOD4db"
         },
         "tier": {
             "value": "Standard"
@@ -21,7 +21,7 @@
             "value": "AdventureWorksLT"
         },
         "serverName": {
-            "value": "@dbServerName"
+            "value": "dbb05d5e-MOD4server"
         },
         "licenseType": {
             "value": ""
