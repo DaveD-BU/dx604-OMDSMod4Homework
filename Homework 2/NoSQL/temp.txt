@@ -1,0 +1,13 @@
+az deployment group create --resource-group Mod4_Homework --template-file template/template.json --parameters template/parameters.json
+
+
+SELECT c.title 
+FROM movies AS c 
+JOIN p IN c["production_companies"] 
+WHERE p.name = "Dentsu"
+
+
+SELECT c.title 
+FROM movies AS c 
+JOIN p IN c.keywords 
+WHERE p.name = "artificial intelligence"
